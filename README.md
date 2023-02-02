@@ -1,3 +1,27 @@
 # crud_menu_mongo_remoto
-programa con un menu en consola ,donde se realizaran las acciones clasicas (CRUD)en una base de datos remota (mongoATLAS)
-[diagrama](%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20style%3D%22edgeStyle%3Dnone%3Brounded%3D0%3BorthogonalLoop%3D1%3BjettySize%3Dauto%3Bhtml%3D1%3BsourcePerimeterSpacing%3D5%3BendArrow%3Dnone%3BendFill%3D0%3BtargetPerimeterSpacing%3D5%3Bshape%3Darrow%3B%22%20edge%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22410%22%20y%3D%22246%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22679%22%20y%3D%22248.66336633663366%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E)
+
+###### #### programa con un menu que se muestra por consola,donde se pueden realizar las acciones basicas con una base de datos (CRUD),hacia una base de datos no relacional remota (mongoDBATLAS).
+
+### librerias utilizadas
+1. from pymongo import MongoClient
+Para realizar la conexion hacia el cliente de mongo y realizar las acciones a un BD
+2. datetime
+para obtener el tiempo actual
+
+**menu**
+
+
+- agregar registro:
+Solo se contemplo la accion de ingresar un registro por ves,indicando sus valores para cada campo.
+
+- buscar registro:
+Busca un registro por la key y value ingresada por el usuario,sino hay coincidencia se retornara un none.
+
+- actualizar registro:
+Se solicita ingresar un value para idProduct,para realizar la busqueda sobre el campo donde se ermitira actualizar un registro,cargando todos los valores nuevamente para este registro.
+
+- eliminar registro:
+Se solicita ingresar un value para el campo idProduct,para eliminar el registro completo.El usuario debera corrobar si desea realizar la eliminación o no.
+
+- salir:
+Finalizara la ejecucion del programa
